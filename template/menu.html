@@ -1,0 +1,20 @@
+{{define "menu"}}
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>メニュー</title>
+</head>
+<body>
+    {{ template "logout".  }}
+    
+
+    <form  action="/menu/top" method="post">
+        <p>Todo</p> <input type="text" name="Todo" placeholder="Todo"/>
+        <p><input type="submit" value="登録"/></p>
+    </form>
+    
+
+</body>
+</html>
+{{end}}

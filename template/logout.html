@@ -1,0 +1,13 @@
+{{define "logout"}}
+
+<form action="/logout" method="post">
+    <p>ユーザー名 {{.name}}</p>
+    <ui>{{range.Todo}}</ui>
+    <li> {{ .Todo }}
+    <label><a href="top/{{.ID}}">編集</a></label>
+
+    </li>
+    {{end}}
+    <p><input type="submit" value="ログアウト"></p>
+</form>
+{{end}}

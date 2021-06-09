@@ -1,0 +1,19 @@
+
+<body>
+    <h2>詳細</h2>
+    <h3>変更前  {{.todo.Todo}} </h3>
+   <form  action="/menu/update/{{.todo.ID}}" method="post">
+        <p>内容<input type="text" name="Todo" size="30"  ></p>
+        <p><input type="submit" value="変更"></p>
+    
+    </form> 
+    
+    <form  action="/menu/top/{{.todo.ID}}" method="post">
+       <!---- <input type="hidden" name="_method" value="DELETE"> -->
+        <p><input type="submit" value="削除"></p>
+    
+    </form> 
+    
+</form>
+</body>
+
