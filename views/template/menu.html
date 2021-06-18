@@ -13,6 +13,11 @@
         <p>Todo</p> <input type="text" name="Todo" placeholder="Todo"/>
         <p><input type="submit" value="登録"/></p>
     </form>
+    <ui>{{range.Todo}}</ui>
+    <li> {{ .Todo }}
+    <label><a href="top/{{.ID}}">編集</a></label>
+        {{end}}
+    </li>
     
 
 </body>

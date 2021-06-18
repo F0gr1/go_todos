@@ -17,7 +17,8 @@ var LoginInfo sessioninfo.SessionInfo
 func main() {
 
 	engine := gin.Default()
-	engine.LoadHTMLGlob("template/*")
+	engine.LoadHTMLGlob("views/template/*")
+	engine.Static("/views", "./views")
 	store := cookie.NewStore([]byte("select"))
 	engine.Use(sessions.Sessions("mysession", store))
 
