@@ -1,7 +1,14 @@
 {{define "logout"}}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <Title>Logout</Title>
+</head>
 
 <form action="/logout" method="post">
-    <p>ユーザー名 {{.name}} <p><input type="submit" value="ログアウト"></p></p>
+    <H2>ユーザー名 {{.name}} <p><input class="btn btn-primary" type="submit" value="ログアウト"></p></H2>
     
 </form>
 {{end}}

@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
+    <header>
     {{ template "logout".  }}
-    
+    </header>
 
     <form  action="/menu/top" method="post">
-        <p>Todo</p> <input type="text" name="Todo" placeholder="Todo"/>
+        <span class="input-group-text" id="basic-addon1">Todo</span>
+        <input type="text" name ="Todo" class="form-control" placeholder="Todo" aria-label="Todo" aria-describedby="basic-addon1">
         <p><input class="btn btn-primary" type="submit" value="登録"/></p>
     </form>
     <table class="table">
@@ -30,7 +32,7 @@
              <th scope="row">{{.ID}}</th>
              <th scope="row">{{.Todo}}</th>
              <th scope="row"><label><a href="top/{{.ID}}">編集</a></label></th>
-             <th scope="row">        <p><input  class="btn btn-primary" type="submit" value="完了"/></p></th>
+             <th scope="row"><p><input  class="btn btn-primary" type="submit" value="完了"/></p></th>
              {{end}}
             </tr>
             
