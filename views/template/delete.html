@@ -1,0 +1,15 @@
+{{define "delete"}}
+<body>
+    <h1>削除確認</h1>
+    <p>本当に削除しますか？</p>
+    <ul>
+        <li>内容： {{.Todo}}</li>
+        <li>作成時間： {{.CreatedAt}}</li>
+    </ul>
+
+    <form method="post" action="/menu/top/{{.ID}}">
+        <p><input type="submit" value="削除"></p>
+        <p><a href="/menu/top">戻る</a></p>
+    </form>
+</body>
+{{end}}

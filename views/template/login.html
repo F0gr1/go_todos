@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Loginページ</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/login.css">
+    </head>
+    <body>
+        <header>
+            <h2 class="h3 mt-2 mb-3 font-weight-normal1">    Login</h2>
+        </header>
+
+        <form  action="/login" method="post">
+            <div class="mb-3">
+                <span class="input-group-text" id="basic-addon1">Username</span>
+                <input type="text" name ="name" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="mb-3">
+                <span class="input-group-text" id="basic-addon1">Password</span>
+                <input type="password" name ="pass" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <p><input  class="btn btn-primary" type="submit" value="Singin"/></p>
+        </form>
+        <a href="/singup"><p><input  class="btn btn-primary" type="submit" value="Singup"/></p> </a>
+       
+    </body>
+</html>

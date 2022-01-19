@@ -1,0 +1,25 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Editページ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <h2>詳細</h2>
+    <h3>変更前  {{.todo.Todo}} </h3>
+   <form  action="/menu/update/{{.todo.ID}}" method="post">
+    <span class="input-group-text" id="basic-addon1">変更内容</span>
+    <input type="text" name ="Todo" class="form-control" placeholder="Todo" aria-label="Todo" aria-describedby="basic-addon1">
+    <p><input  class="btn btn-primary" type="submit" value="変更"></p>
+    
+    </form> 
+    
+    <form  action="/menu/top/{{.todo.ID}}" method="post">
+       <!---- <input type="hidden" name="_method" value="DELETE"> -->
+        <p><input  class="btn btn-primary" type="submit" value="削除"></p>
+    
+    </form> 
+    
+</form>
+</body>
+
